@@ -3,7 +3,7 @@ import exceptionhandling.*;
 public class Main {
     public static void main(String[] args) {
 
-        String concept = "CustomException";
+        String concept = "TryWithResources";
 
         ExceptionHandler obj;
 
@@ -12,6 +12,7 @@ public class Main {
             case "HandlineMultipleExceptions" : obj = new Class2HandlineMultipleExceptions(); break;
             case "ReturnVsFinally" : obj = new Class3ReturnVsFinally(); break;
             case "CustomException" : obj = new Class4CustomException(); break;
+            case "TryWithResources" : obj = new Class5TryWithResources(); break;
             default: obj = new Class1ExceptionInfos(); break;
         }
 
