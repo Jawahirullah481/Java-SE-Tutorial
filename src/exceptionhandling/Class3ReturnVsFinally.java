@@ -1,5 +1,7 @@
 package exceptionhandling;
 
+import exceptionhandling.handler.ExceptionHandler;
+
 public class Class3ReturnVsFinally extends ExceptionHandler {
 
     /*

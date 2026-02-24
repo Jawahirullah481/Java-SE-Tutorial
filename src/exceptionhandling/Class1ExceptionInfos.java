@@ -1,5 +1,7 @@
 package exceptionhandling;
 
+import exceptionhandling.handler.ExceptionHandler;
+
 public class Class1ExceptionInfos extends ExceptionHandler {
 
     /*

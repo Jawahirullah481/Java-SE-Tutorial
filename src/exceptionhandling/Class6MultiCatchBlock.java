@@ -1,5 +1,7 @@
 package exceptionhandling;
 
+import exceptionhandling.handler.ExceptionHandler;
+
 public class Class6MultiCatchBlock extends ExceptionHandler {
 
     @Override
