@@ -14,6 +14,11 @@ public class Class1CreatingThreads extends ThreadHandler {
 
         thread1.start();
         thread2.start();
+
+
+        // Uncomment below code to know how Thread works
+        // thread1.run();
+        // thread2.run();
     }
 
     private Thread createThread1() {
