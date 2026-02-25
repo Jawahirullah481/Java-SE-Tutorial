@@ -7,7 +7,7 @@ public class MultiThreadingFactory {
 
     public static void execute() {
 
-        String concept = "SynchronizedBlock";
+        String concept = "DaemonThreads";
 
         ThreadHandler obj;
 
@@ -19,6 +19,8 @@ public class MultiThreadingFactory {
             case "InterruptMethod" : obj = new Class5InterruptMethod(); break;
             case "SynchorizedMethod" : obj = new Class6SynchronizedMethod(); break;
             case "SynchronizedBlock" : obj = new Class7SynchronizedBlock(); break;
+            case "WaitNotify" : obj = new Class8WaitNotify(); break;
+            case "DaemonThreads" : obj = new Class9DaemonThreads(); break;
             default: obj = new Class1CreatingThreads(); break;
         }
 
