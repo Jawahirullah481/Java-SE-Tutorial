@@ -1,3 +1,4 @@
+import filehandling.factory.FileHandlingFactory;
 import multithreading.factory.MultiThreadingFactory;
 
 public class Main {
@@ -7,7 +8,10 @@ public class Main {
         // ExceptionHandlingFactory.execute();
 
         // 2. Multi Threading
-        MultiThreadingFactory.execute();
+        // MultiThreadingFactory.execute();
+
+        // 3. File Handling
+        FileHandlingFactory.execute();
 
     }
 }

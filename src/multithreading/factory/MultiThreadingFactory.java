@@ -7,7 +7,7 @@ public class MultiThreadingFactory {
 
     public static void execute() {
 
-        String concept = "DaemonThreads";
+        String concept = "ThreadPool";
 
         ThreadHandler obj;
 
@@ -21,6 +21,7 @@ public class MultiThreadingFactory {
             case "SynchronizedBlock" : obj = new Class7SynchronizedBlock(); break;
             case "WaitNotify" : obj = new Class8WaitNotify(); break;
             case "DaemonThreads" : obj = new Class9DaemonThreads(); break;
+            case "ThreadPool" : obj = new Class10ThreadPool(); break;
             default: obj = new Class1CreatingThreads(); break;
         }
 

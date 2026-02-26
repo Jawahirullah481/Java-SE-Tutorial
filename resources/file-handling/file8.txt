@@ -1,0 +1,6 @@
+I am the Content inside File 3!
+I am line 2.
+I am line 3.
+Lion Tiger Cat
+Mouse Rabbit Giraffe
+Elephant Bear Deer

@@ -1,0 +1,2 @@
+
+This Message is from Class2WriteIntoFile
