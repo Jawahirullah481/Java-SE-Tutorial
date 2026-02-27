@@ -1,4 +1,4 @@
-package filehandling;
+package filehandling.io;
 
 import filehandling.handler.FileHandler;
 

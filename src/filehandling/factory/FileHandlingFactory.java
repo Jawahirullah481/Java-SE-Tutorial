@@ -1,13 +1,16 @@
 package filehandling.factory;
 
-import filehandling.*;
 import filehandling.handler.FileHandler;
+import filehandling.io.*;
+import filehandling.nio.Class1ReadFromFileNIO;
+import filehandling.nio.Class2WriteIntoFileNIO;
+import filehandling.nio.Class3CopyFileNIO;
 
 public class FileHandlingFactory {
 
     public static void execute() {
 
-        String concept = "ListAllFiles";
+        String concept = "CopyFileNIO";
 
         FileHandler obj;
 
@@ -22,6 +25,9 @@ public class FileHandlingFactory {
             case "MergeTwoFiles" : obj = new Class8MergeTwoFiles(); break;
             case "Serialization" : obj = new Class9Serialization(); break;
             case "ListAllFiles" : obj = new Class10ListAllFiles(); break;
+            case "ReadFromFileNIO" : obj = new Class1ReadFromFileNIO(); break;
+            case "WriteIntoFileNIO" : obj = new Class2WriteIntoFileNIO(); break;
+            case "CopyFileNIO" : obj = new Class3CopyFileNIO(); break;
             default: obj = new Class1CreateFile(); break;
         }
 

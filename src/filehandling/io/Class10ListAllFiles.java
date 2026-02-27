@@ -1,9 +1,8 @@
-package filehandling;
+package filehandling.io;
 
 import filehandling.handler.FileHandler;
 
 import java.io.File;
-import java.util.Arrays;
 
 public class Class10ListAllFiles extends FileHandler {
 
