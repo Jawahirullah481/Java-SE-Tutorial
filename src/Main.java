@@ -1,5 +1,8 @@
 import filehandling.factory.FileHandlingFactory;
+import generics.factory.GenericsFactory;
+import lambda.factory.LambdaFactory;
 import multithreading.factory.MultiThreadingFactory;
+import stream.factory.StreamFactory;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +14,16 @@ public class Main {
         // MultiThreadingFactory.execute();
 
         // 3. File Handling
-        FileHandlingFactory.execute();
+        // FileHandlingFactory.execute();
+
+        // 4. Generics
+        // GenericsFactory.execute();
+
+        // 5. Lambda Expression
+        // LambdaFactory.execute();
+
+        // 6. Stream
+        StreamFactory.execute();
 
     }
 }
