@@ -1,0 +1,97 @@
+Iterable
+   ↓
+Collection
+   ├── List
+   │     ├── ArrayList
+   │     │     [Insertion Order Preserved |
+   │     │      Duplicates Allowed |
+   │     │      Non-Synchronized |
+   │     │      Backed by Dynamic Array |
+   │     │      Best for Read/Random Access O(1)]
+   │
+   │     ├── LinkedList
+   │     │     [Insertion Order Preserved |
+   │     │      Duplicates Allowed |
+   │     │      Non-Synchronized |
+   │     │      Doubly Linked List |
+   │     │      Best for Frequent Add/Remove Operations]
+   │
+   │     └── Vector
+   │           [Insertion Order Preserved |
+   │            Duplicates Allowed |
+   │            Synchronized |
+   │            Legacy Class |
+   │            Slower due to Synchronization]
+   │
+   ├── Set
+   │     ├── HashSet
+   │     │     [No Insertion Order Guarantee |
+   │     │      Duplicates Not Allowed |
+   │     │      Allows One NULL |
+   │     │      Non-Synchronized |
+   │     │      Internally uses HashMap |
+   │     │      Average O(1) operations]
+   │
+   │     ├── LinkedHashSet
+   │     │     [Insertion Order Preserved |
+   │     │      Duplicates Not Allowed |
+   │     │      Non-Synchronized |
+   │     │      Uses HashTable + Linked List |
+   │     │      Slightly slower than HashSet]
+   │
+   │     └── TreeSet
+   │           [Sorted Order (Natural / Comparator) |
+   │            Duplicates Not Allowed |
+   │            Non-Synchronized |
+   │            Based on Red-Black Tree |
+   │            O(log n) operations |
+   │            NULL Not Allowed]
+   │
+   └── Queue
+         ├── PriorityQueue
+         │     [Elements Ordered by Priority |
+         │      Not FIFO |
+         │      Duplicates Allowed |
+         │      Non-Synchronized |
+         │      Heap Data Structure |
+         │      Head = Highest Priority Element]
+         │
+         └── Deque
+                └── ArrayDeque
+                      [Insertion Order Maintained |
+                       Duplicates Allowed |
+                       Non-Synchronized |
+                       Faster than Stack & LinkedList |
+                       Supports FIFO and LIFO operations]
+
+---------------------------------------------------------------------------------
+
+Map
+   ├── HashMap
+   │     [No Ordering Guarantee |
+   │      One NULL Key Allowed |
+   │      Duplicate Keys Not Allowed |
+   │      Non-Synchronized |
+   │      Based on Hashing |
+   │      Average O(1) retrieval]
+   │
+   ├── LinkedHashMap
+   │     [Insertion Order Preserved |
+   │      Duplicate Keys Not Allowed |
+   │      Non-Synchronized |
+   │      HashMap + Doubly Linked List |
+   │      Used for LRU Cache implementations]
+   │
+   ├── TreeMap
+   │     [Sorted by Natural Order / Comparator |
+   │      Duplicate Keys Not Allowed |
+   │      Non-Synchronized |
+   │      Red-Black Tree |
+   │      O(log n) operations |
+   │      NULL Key Not Allowed]
+   │
+   └── Hashtable
+         [No NULL Key or Value |
+          Synchronized |
+          Legacy Class |
+          Thread Safe but Slower]
