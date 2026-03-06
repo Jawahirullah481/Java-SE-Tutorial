@@ -1,4 +1,5 @@
 package httprequests.handler;
 
-public class HttpHandler {
+public abstract class HttpHandler {
+    public abstract void execute();
 }

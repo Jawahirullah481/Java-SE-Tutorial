@@ -10,7 +10,7 @@ public class Class3MethodReference extends LambdaHandler {
     /*
         1. When to use Method Reference ?
 
-        Method Reference Always used instead of single statement lambda expression. Without this only schenario, we can't use method reference.
+        Method Reference Always used instead of single statement lambda expression. Without this only scenario, we can't use method reference.
 
 
         2. Is there any rules ?
@@ -18,7 +18,7 @@ public class Class3MethodReference extends LambdaHandler {
         By writing lambda expression, what we are actually doing is,
 
         # we are creating the anonymous class of the functional interface and providing implementation of that method.
-        # By using method reference in place of lambda expression, what will happen is, inside that implementation of that anymous class' function, our method reference call will happen.
+        # By using method reference in place of lambda expression, what will happen is, inside that implementation of that anonymous class' function, our method reference call will happen.
         # So, the number of arguments and return type should match the functional interface's method and our method reference's method.
 
         Example :

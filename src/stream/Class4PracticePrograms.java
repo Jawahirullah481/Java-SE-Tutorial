@@ -10,7 +10,7 @@ public class Class4PracticePrograms extends StreamHandler {
     @Override
     public void execute() {
 
-        List<Integer> list = List.of(1,2,3,4,5,3,2,1);
+        List<Integer> list = List.of(1,2,3,4,5,3,2,1,3);
 
         // 1. Count Even Numbers
         long count = list.stream().filter(num -> num % 2 == 0).count();
@@ -30,7 +30,6 @@ public class Class4PracticePrograms extends StreamHandler {
         // 4. Print First Matching element
         list.stream().filter(num -> num % 2 == 0).findFirst().ifPresent(num -> System.out.println("First Event Element : " + num));
 
-
         // 5. Find Duplicate Numbers
         Set<Integer> added = new HashSet<>();
         List<Integer> duplicates = list.stream().filter(num -> !added.add(num)).collect(Collectors.toList());
@@ -41,8 +40,11 @@ public class Class4PracticePrograms extends StreamHandler {
         Map<Integer, Long> itemsCount = list.stream().collect(Collectors.groupingBy(num -> num, Collectors.counting()));
         System.out.println("Frequency : " + itemsCount);
 
+        // 7. Most Frequent Element
+        int mostFrequentedElement = list.stream().collect(Collectors.groupingBy(item -> item, Collectors.counting())).entrySet().stream().max(Comparator.comparing(Map.Entry::getValue)).orElse(null).getKey();
+        System.out.println("Most Frequented Element : " + mostFrequentedElement);
 
-        // 7. Flatten Nested List
+        // 8. Flatten Nested List
         List<List<Integer>> nestedList = List.of(
                 List.of(1, 2),
                 List.of(3, 4)
@@ -50,11 +52,11 @@ public class Class4PracticePrograms extends StreamHandler {
         List<Integer> twoMultiples = nestedList.stream().flatMap(childList -> childList.stream()).map(num -> num * 2).collect(Collectors.toList());
         System.out.println("Tow Multiples : " + twoMultiples);
 
-        // 8. Highest Salary (NOTE : for primitive streams(IntStream, DoubleStream, LongStream), then already know how to compare. So, no need to use comparator for min() or max())
+        // 9. Highest Salary (NOTE : for primitive streams(IntStream, DoubleStream, LongStream), then already know how to compare. So, no need to use comparator for min() or max())
         double highestSalary = Employee.getEmployees().stream().mapToDouble(emp -> emp.salary).max().orElse(0);
         System.out.println("Highest Salary : " + highestSalary);
 
-        // 9. Average Salary
+        // 10. Average Salary
         double averageSalary = Employee.getEmployees().stream().mapToDouble(emp -> emp.salary).average().orElse(0);
         System.out.println("Average Salary : " + averageSalary);
     }
