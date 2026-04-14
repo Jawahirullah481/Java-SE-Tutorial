@@ -1,0 +1,21 @@
+package com.jawa.javacoretutorial.filehandling.io;
+
+import com.jawa.javacoretutorial.filehandling.handler.FileHandler;
+
+import java.io.File;
+
+public class Class10ListAllFiles extends FileHandler {
+
+    @Override
+    public void execute() {
+
+        File directory = new File("resources/file-handling");
+        File[] files = directory.listFiles();
+
+        for(File file : files) {
+            if(file.isFile())
+                System.out.println(file.getName());
+        }
+
+    }
+}
